@@ -1,5 +1,21 @@
 # Quick Reference - YWCA Data Platform Project
 
+## ⚡ YOUR ROLE: Product Designer + Developer
+
+**CRITICAL INSIGHT**: They don't know what the platform should look/feel like yet. They hired you to:
+1. **Help them figure out the UX/UI** (design collaboration)
+2. **Build it** (development)
+
+**This changes everything:**
+- Thursday is NOT "tell me your requirements"
+- Thursday IS "let's figure out together what makes sense"
+- You lead with concepts, they react
+- Collaborative design, not requirements extraction
+
+**See**: `DESIGN_COLLABORATION_APPROACH.md` and `WIREFRAME_CONCEPTS.md` for full strategy
+
+---
+
 ## The Bottom Line
 
 **What you're building:** Research infrastructure disguised as a simple data platform. Transform a 61-page survey into continuous data collection that serves both operational needs (grant writing) AND research needs (peer-reviewed publications).
@@ -184,89 +200,109 @@ ORGANIZATIONAL EFFORTS (non-program activities)
 
 ---
 
-## ⭐ The 5 MUST-ANSWER Questions for Thursday
+## ⭐ Key Questions for Thursday (Design Collaboration)
 
-**UPDATED - Chris already built trauma graph, budget not a concern. Focus on these:**
+**NEW APPROACH**: These aren't requirements questions - they're design constraint questions to inform your UX proposals.
 
-### The Critical Five:
+### Part 1: Understand User Context (Inform Design Decisions)
 
-### 1. Survey Replacement Strategy
-**"Is the platform meant to completely replace this annual survey, or transform it into continuous data entry?"**
-- If replace: Do some questions still need to be asked annually?
-- If transform: Which survey questions become ongoing data entry vs. one-time setup?
-- What happens to the survey workflow after the platform launches?
+### 1. Usage Pattern
+**"Walk me through a typical chapter director's week. When would they open this platform?"**
+→ Determines if design should be dashboard (daily check-in) or task-based (monthly data entry)
 
-### 2. Data Import from Existing Survey
-**"You have October 2024 survey data. Should we import this as baseline data for chapters?"**
-- Do chapters need to see their historical survey responses?
-- Is this data editable or locked as historical reference?
-- Does this become the "starting point" for their platform data?
+### 2. The ONE Thing
+**"What's the ONE thing that, if this platform did it well, would make chapters actually use it?"**
+→ Identifies the killer feature to design around
 
-### 3. Update Frequency by Data Type
-**"How often should chapters update different types of data?"**
-- **Organization info** (address, staff count, locations): Annually? As changes occur?
-- **Demographics served**: Monthly? Quarterly? Annually?
-- **Financial data**: After fiscal year? Monthly? When 990 filed?
-- **Programs**: Added immediately when launched? Updated how often?
-- **Impact evaluations**: Continuous assessment? Quarterly? Annually?
-- **Service numbers** (people served): Real-time? Monthly? Annually?
+### 3. Current Workflow
+**"Show me how a chapter currently answers 'How many women did you serve?' - where do they get that data?"**
+→ Reveals pain points and design opportunities
 
-### 4. MVP Scope Definition
-**"What MUST be in version 1 for this to be useful to chapters?"**
-- Data warehouse only, or must include trauma graph?
-- Which entities: Organizations + Programs only? Or all entities?
-- Which reports: Grant reports only? Or all report types?
-- Can we launch with basic features and add advanced analytics later?
-- What's the absolute minimum for YWCA to say "yes, this is useful"?
+### 4. User Sophistication
+**"Show me your current tools. Do chapters use Excel regularly? Are they comfortable with data entry?"**
+→ Determines complexity level (simple forms vs. power features)
 
-### 5. Cross-Chapter Data Visibility
-**"What can chapters see about other chapters' data?"**
-- Can Buffalo see Rochester's program names? Descriptions? Impact data?
-- Only aggregated/anonymized data? ("20 chapters in NY do childcare programs")
-- Can they see individual chapter identities or just aggregate numbers?
-- What's public within the network vs. private to each chapter?
-- Does this change if chapters opt-in to sharing?
+### 5. Report Reality Check
+**"Show me a grant application you want to fill out with this platform's data"**
+→ Shows what report generation actually needs to produce
 
-### Important (But Not Blockers) (6-10):
+---
 
-### 6. Research vs. Operations Balance
-**"I see this is research infrastructure with an impact measurement framework. What's the balance between research needs and operational needs?"**
-- Primary purpose: 10Seven's research or chapters' operations?
-- Should chapters even see the impact framework or should we abstract it?
+## Part 2: Present Design Concepts (Get Reactions)
 
-### 7. Impact Framework Enforcement
-**"How rigidly should the platform enforce the impact framework categories?"**
-- Must all programs fit into the 3 violence types?
-- Can chapters add their own categories or must use controlled vocabulary?
-- How flexible should the system be as the framework evolves?
+**Bring to Thursday**: Wireframes showing 2-3 UX approaches
 
-### 8. Statistical Analysis Capabilities
-**"You plan correlation analysis. What statistical capabilities need to be in the platform?"**
-- Basic (percentages, averages) or advanced (correlations, regressions)?
-- Export to Qualtrics/SPSS/R for analysis?
-- Generate correlation tables in platform?
+### Show Option A: Simple Form-Based
+"What if adding a program was a step-by-step wizard like this?"
+→ Get reaction: Too simple? Too much clicking? Just right?
 
-### 9. Data Quality for Research
+### Show Option B: Dashboard with Inline Editing
+"Or what if it was more like a spreadsheet with dashboard cards?"
+→ Get reaction: Too complex? Overwhelming? Powerful?
+
+### Show Option C: Hybrid Approach
+"Or a dashboard that guides you but doesn't constrain you?"
+→ Get reaction: Best of both? Too busy?
+
+**Key question**: "Which feels closest to what your chapters would use?"
+
+---
+
+## Part 3: Validate Assumptions
+
+### Cross-Chapter Learning
+**Show search vs. browse vs. feed concepts**
+"If Buffalo wants inspiration from Rochester, which of these feels right?"
+
+### Report Generation
+**Show template picker vs. report builder concepts**
+"Would chapters want one-click reports or ability to customize?"
+
+### Information Architecture
+**Show organization-centric vs. program-centric concepts**
+"Do chapters think in terms of 'our organization' or 'our programs'?"
+
+---
+
+## Part 4: Clarify Requirements (But Only the Critical Ones)
+
+### Data Granularity
+**"When you say 'we served 168 women,' is that just a number or 168 individual records?"**
 **"What validation is needed to ensure research-quality data?"**
 - Required fields for research vs. optional for operations?
 - Coherence checks (evidence type matches impact type)?
 - Review/approval before data used in publications?
 
-### 10. Built-In Definitions and Help
-**"The survey toolkit has a glossary. Should these definitions be built into the platform?"**
-- Tooltip/help text on every field?
-- Searchable glossary within platform?
-- Contextual help explaining the framework?
+### Cross-Chapter Visibility
+**"If Buffalo wants to learn from Rochester's childcare program, what exactly should they see?"**
+→ Informs permissions model and network discovery UX
+
+### Survey Data Import
+**"Should we import the October 2024 survey data as baseline, or start fresh?"**
+→ Affects data migration plan
 
 ---
 
-## Other Important Questions
+## What to Bring Thursday
 
-11. **Report customization**: Fixed templates or customizable by chapters?
+### 1. Wireframe Sketches (See WIREFRAME_CONCEPTS.md)
+- Chapter dashboard (2-3 variations)
+- Add program flow (wizard vs. form)
+- Report generation (template picker vs. builder)
+- Cross-chapter discovery (search vs. browse)
 
-12. **Licensing architecture**: How does licensing affect what users see and can do?
+**Keep them rough** - pen and paper is fine. You want reactions, not approvals.
 
-13. **Audit trail**: Do you need to track who entered what data and when for accountability?
+### 2. Your Understanding
+- Data model from survey (you have this)
+- Impact framework (you understand this)
+- Trauma graph integration (you built it)
+
+### 3. Design Principles to Propose
+- Simple by default, powerful when needed
+- Progress over perfection (autosave, drafts)
+- Context-aware help (tooltips, examples)
+- Mobile-friendly but desktop-first
 
 ---
 
@@ -282,84 +318,99 @@ Platform succeeds when:
 
 ---
 
-## What to Show/Ask Thursday
+## Thursday Meeting Structure
 
-### Show:
-- Quick database schema sketch
-- Mockup of chapter dashboard
-- Mockup of "Add Program" form
-- Mockup of grant report output
+### Part 1: Context (30 min)
+- Understand usage patterns and frequency
+- See current tools/workflows (ask them to show, not tell)
+- Identify the ONE killer feature
+- Walk through real user scenarios
 
-### Ask:
-- Walk through real user scenarios (not hypothetical)
-- Show me their current tools (Max QDA, Qualtrics, Tableau)
-- Show me example reports they wish they could generate
-- Show me what chapters currently struggle with
+### Part 2: React to Concepts (45 min)
+- Show 2-3 UX approach wireframes
+- Get reactions (what feels right/wrong?)
+- Sketch screens together
+- Validate information architecture
 
-### Clarify:
-- What's MVP vs. future
-- What's the timeline
-- How does licensing work
-- What's the relationship between data warehouse and trauma graph
+### Part 3: Scope & Next Steps (30 min)
+- Based on reactions, propose MVP
+- Agree on timeline
+- Set expectations for next deliverable (mockups? prototype?)
+- Schedule follow-up
+
+### Part 4: Close (15 min)
+- Clarify any critical requirements (data granularity, visibility rules)
+- Confirm understanding
+- Next steps and deliverables
 
 ---
 
 ## Red Flags to Watch
 
-⚠️ **"Everything is must-have"** → Push back, prioritize ruthlessly
+⚠️ **"We want it to look like [complex enterprise software]"** → Push for simplicity first
+⚠️ **"Every field is important!"** → Force prioritization
+⚠️ **They can't articulate the primary use case** → Need to talk to real chapter users
 ⚠️ **Vague on user workflows** → Keep asking for specific examples
-⚠️ **No YWCA users involved** → Who validated these requirements?
-⚠️ **Unrealistic timeline** → This is a significant platform, not a weekend project
-⚠️ **Unclear trauma graph integration** → This is technically complex, need clarity
+⚠️ **No reactions to your wireframes** → They might not understand - simplify more
 
 ---
 
 ## Your Advantage
 
-✅ You've seen the 61-page survey (they said they'd send it - you already have it!)
+✅ You've analyzed the 61-page survey (complete data model)
 ✅ You understand the pain point (3-week survey marathon)
-✅ You can speak their language ("data intranet", "synthesizer", "warehouse")
-✅ You know the data model (every survey question is a field)
-✅ You understand the users (volunteers to data scientists)
+✅ You built the trauma graph (know the integration)
+✅ You understand the framework (research infrastructure)
+✅ You have design concepts ready (not starting from scratch)
 
-**Go into Thursday with confidence. You know more than you think!**
+**Your role: Design partner + developer. Go lead the conversation!**
 
 ---
 
 ## Quick Prep Checklist
 
-Before Thursday:
-- [ ] Review the survey again, note any confusing questions
-- [ ] Sketch a quick database schema
-- [ ] Look up Max QDA, Qualtrics, Tableau if unfamiliar
-- [ ] Prepare 3-5 specific questions based on survey
-- [ ] Have notepad ready to sketch screens during call
-- [ ] Be ready to push back on scope ("What's absolutely essential for v1?")
+**Before Thursday:**
+- [ ] Sketch 2-3 wireframe concepts (dashboard, add program, reports)
+- [ ] Review DESIGN_COLLABORATION_APPROACH.md
+- [ ] Review WIREFRAME_CONCEPTS.md for options
+- [ ] Prepare design principles to propose
+- [ ] Have paper/tablet ready to sketch during call
 
-During Thursday:
-- [ ] Ask for walkthroughs, not descriptions
-- [ ] Draw everything (screens, data flows, architecture)
+**During Thursday:**
+- [ ] LEAD with concepts, not questions
+- [ ] Show options, get reactions
+- [ ] Sketch together in real-time
 - [ ] Use their language back to them
-- [ ] Request real examples, not hypotheticals
-- [ ] Summarize what you heard and confirm understanding
-- [ ] End with clear next steps and deliverables
+- [ ] Ask "show me" not "tell me"
+- [ ] End with: "Based on this, here's what I'll create next"
 
-After Thursday:
-- [ ] Send summary of what you heard
-- [ ] Provide technical architecture proposal
-- [ ] Give timeline estimate for MVP
-- [ ] List any remaining unknowns/blockers
+**After Thursday:**
+- [ ] Send summary of what you heard and decisions made
+- [ ] Create detailed wireframes based on direction from meeting
+- [ ] Build interactive prototype (Figma/similar)
+- [ ] Provide technical architecture proposal and timeline
+- [ ] Schedule follow-up to review mockups
+- [ ] Identify YWCA chapter users to test with
 
 ---
 
 ## Files You Have
 
-1. **project_analysis_and_context.md** - Full project breakdown from call transcript
-2. **questions_for_clients.md** - Detailed questions organized by priority (now includes research questions!)
-3. **survey_analysis_and_data_model.md** - Deep dive on the 61-page survey with exact data model
-4. **impact_framework_analysis.md** - The theoretical framework and research infrastructure insights
-5. **GAP_ANALYSIS_critical_unknowns.md** - ⚠️ **READ THIS!** 20 critical gaps from call re-analysis
-6. **QUICK_REFERENCE.md** - This file! Quick prep for Thursday (updated with research insights)
+### Design Collaboration Strategy (⭐ READ THESE!)
+1. **DESIGN_COLLABORATION_APPROACH.md** - Your role as design partner, not just builder
+2. **WIREFRAME_CONCEPTS.md** - UX options to present Thursday
+3. **REAL_GAPS_requirements_only.md** - Genuine requirements questions (not project management)
+
+### Project Context
+4. **project_analysis_and_context.md** - Full project breakdown from call transcript
+5. **survey_analysis_and_data_model.md** - Deep dive on 61-page survey with exact data model
+6. **impact_framework_analysis.md** - Theoretical framework and research infrastructure
+7. **questions_for_clients.md** - Detailed questions (older version, see newer docs above)
+
+### Reference
+8. **QUICK_REFERENCE.md** - This file! Updated for design collaboration approach
+9. **UPDATED_GAP_ANALYSIS.md** - Gap analysis (superseded by REAL_GAPS)
+10. **GAP_ANALYSIS_critical_unknowns.md** - Original 20 gaps (superseded)
 
 ## The Complete Picture
 
@@ -369,6 +420,23 @@ You now understand:
 - ✅ **The data model**: Every survey question = a database field
 - ✅ **The framework**: 4 impact pillars, 3 impact types, 3 violence types
 - ✅ **The dual purpose**: Operational tool for chapters + research infrastructure for 10Seven
-- ✅ **The challenge**: Make it simple while supporting PhD-level research
+- ✅ **YOUR ROLE**: Design partner + developer (they need you to help figure out the UX)
 
-You're ready. 🚀
+---
+
+## Bottom Line for Thursday
+
+**You're not there to take requirements.**
+**You're there to collaborate on design.**
+
+Come with:
+- ✅ Wireframe concepts
+- ✅ Design principles
+- ✅ Understanding of the problem
+
+Leave with:
+- ✅ Direction on UX approach
+- ✅ Validation of assumptions
+- ✅ Clear next steps
+
+Then: Build with confidence. 🚀
