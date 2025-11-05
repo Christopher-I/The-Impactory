@@ -357,8 +357,9 @@ After Thursday:
 1. **project_analysis_and_context.md** - Full project breakdown from call transcript
 2. **questions_for_clients.md** - Detailed questions organized by priority (now includes research questions!)
 3. **survey_analysis_and_data_model.md** - Deep dive on the 61-page survey with exact data model
-4. **impact_framework_analysis.md** - NEW! The theoretical framework and research infrastructure insights
-5. **QUICK_REFERENCE.md** - This file! Quick prep for Thursday (updated with research insights)
+4. **impact_framework_analysis.md** - The theoretical framework and research infrastructure insights
+5. **GAP_ANALYSIS_critical_unknowns.md** - ⚠️ **READ THIS!** 20 critical gaps from call re-analysis
+6. **QUICK_REFERENCE.md** - This file! Quick prep for Thursday (updated with research insights)
 
 ## The Complete Picture
 
