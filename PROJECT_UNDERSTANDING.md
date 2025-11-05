@@ -6,7 +6,7 @@
 
 A data platform with two integrated components:
 1. **Data Warehouse** - Store and manage YWCA chapter data continuously
-2. **Trauma Graph** - Interactive research visualization (already built by Chris)
+2. **Trauma Graph** - Interactive research visualization (Chris has built a demo and understands its structure)
 
 ---
 
@@ -160,7 +160,7 @@ Based on the 61-page YWCA Impact Survey structure:
 
 ### Two Components:
 1. **Data Warehouse** (their data)
-2. **Trauma Graph** (10Seven's research data - already built)
+2. **Trauma Graph** (10Seven's research data - Chris has built a demo)
 
 ### Integration:
 - Side-by-side view: chapter data + trauma graph
@@ -228,7 +228,7 @@ Based on the 61-page YWCA Impact Survey structure:
 ✅ **The framework**: 4 impact pillars, 3 impact types, 3 violence types
 ✅ **The dual purpose**: Operational tool for chapters + research infrastructure for 10Seven
 ✅ **The challenge**: Make it simple while supporting PhD-level research
-✅ **Trauma graph**: Already built by Chris, integration needed
+✅ **Trauma graph**: Demo built by Chris, understands structure, full implementation needed
 ✅ **Survey structure**: Complete 61-page survey with all fields defined
 
 ---
@@ -296,15 +296,16 @@ Platform succeeds when:
 2. **Product Design**: Design the UX/UI collaboratively with them
 3. **Development**: Build and deliver the platform
 
-**What Chris Already Built**:
-- Trauma graph visualization tool
-- Understanding of the geographic data/mapping component
+**What Chris Has Built**:
+- Demo of trauma graph visualization tool
+- Understanding of the trauma graph structure and geographic data/mapping component
 
 **What Chris Needs to Do**:
 - Understand remaining requirements (Thursday meeting)
 - Design the data warehouse UX/UI
 - Build the data warehouse platform
-- Integrate with existing trauma graph
+- Build the full trauma graph (from demo to production)
+- Integrate data warehouse with trauma graph
 - Deliver complete solution
 
 ---
