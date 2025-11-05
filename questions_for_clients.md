@@ -1,451 +1,499 @@
 # Questions for Thursday Meeting - YWCA Data Platform
 
-## 🎯 KEY INSIGHT FROM THE SURVEY
+## Your Approach
 
-**You've now seen the 61-page survey.** This is critical context:
-- Survey takes chapters 3 weeks to complete
-- Requires digging through files (990s, budgets, strategic plans)
-- Data becomes "stale" after submission
-- Chapters can't access their own data afterward
-- No way to see other chapters' data
-- Headquarters has to survey repeatedly to get updates
+**You're here to understand their world, not spec a system.**
 
-**THE PLATFORM'S CORE PURPOSE: Transform this 61-page survey from a once-a-year marathon into continuous, easy data tracking that chapters can use for their own benefit.**
+- Focus on "show me" not "tell me"
+- Ask about current reality, not envisioned future
+- Let technical details emerge from workflows
+- Real examples only, no hypotheticals
+- Take notes on pain points and frustrations
 
----
-
-## ⭐ THE 5 MOST IMPORTANT QUESTIONS TO ASK
-
-**Ask these first - they'll shape everything else:**
-
-### 1. Survey Replacement Strategy
-**"Is the platform meant to completely replace this annual survey, or transform it into continuous data entry?"**
-- If replace: Do some questions still need to be asked annually?
-- If transform: Which survey questions become ongoing data entry vs. one-time setup?
-- What happens to the survey workflow after the platform launches?
-
-### 2. Data Import from Existing Survey
-**"You have October 2024 survey data. Should we import this as baseline data for chapters?"**
-- Do chapters need to see their historical survey responses?
-- Is this data editable or locked as historical reference?
-- Does this become the "starting point" for their platform data?
-
-### 3. Update Frequency by Data Type
-**"How often should chapters update different types of data?"**
-- **Organization info** (address, staff count, locations): Annually? As changes occur?
-- **Demographics served**: Monthly? Quarterly? Annually?
-- **Financial data**: After fiscal year? Monthly? When 990 filed?
-- **Programs**: Added immediately when launched? Updated how often?
-- **Impact evaluations**: Continuous assessment? Quarterly? Annually?
-- **Service numbers** (people served): Real-time? Monthly? Annually?
-
-### 4. MVP Scope Definition
-**"What MUST be in version 1 for this to be useful to chapters?"**
-- Data warehouse only, or must include trauma graph?
-- Which entities: Organizations + Programs only? Or all entities?
-- Which reports: Grant reports only? Or all report types?
-- Can we launch with basic features and add advanced analytics later?
-- What's the absolute minimum for YWCA to say "yes, this is useful"?
-
-### 5. Cross-Chapter Data Visibility
-**"What can chapters see about other chapters' data?"**
-- Can Buffalo see Rochester's program names? Descriptions? Impact data?
-- Only aggregated/anonymized data? ("20 chapters in NY do childcare programs")
-- Can they see individual chapter identities or just aggregate numbers?
-- What's public within the network vs. private to each chapter?
-- Does this change if chapters opt-in to sharing?
+**Meeting Goal:** Walk away understanding what they do, how they do it, where it breaks, and what good looks like.
 
 ---
 
-## 🔬 NEW: Research Infrastructure Questions
+## Meeting Structure (2 hours)
 
-**Based on the "About the Impact Survey" document, this is research infrastructure, not just data storage:**
+### Part 1: Show Me How You Work Today (45 min)
+Understand current state, tools, processes, pain points
 
-### 6. Research vs. Operations Balance
-**"I see this is research infrastructure with an impact measurement framework. What's the balance between research needs and operational needs?"**
-- Is the primary purpose to support 10Seven's research and publications?
-- Or is it primarily to help chapters with operations (grant writing)?
-- How do we balance these potentially competing needs?
-- Should chapters even see the impact framework (pillars, violence types) or should we abstract it?
+### Part 2: Show Me the Artifacts (30 min)
+See actual research, grants, trauma graph, data
 
-### 7. Impact Framework Enforcement
-**"How rigidly should the platform enforce the impact framework categories?"**
-- Must all programs fit into: Racial Violence, Gender-Based Violence, or Economic Violence?
-- What if a chapter's program doesn't fit the framework?
-- Can chapters add their own categories or must they use your controlled vocabulary?
-- The document says impact areas "may need more specificity as we learn" - how flexible should the system be?
+### Part 3: Walk Through Integration Scenarios (30 min)
+How YWCA data, 10Seven research, and Trauma Graph connect
 
-### 8. Statistical Analysis Capabilities
-**"You plan to do correlation analysis across many variables. What statistical capabilities need to be in the platform?"**
-- Basic only (percentages, averages, year-over-year)?
-- Advanced (correlations, regressions, multivariate analysis)?
-- Or will you export to Qualtrics/SPSS/R for analysis?
-- Do you need cross-tabulations? Filtering by multiple variables?
-- Should the platform generate the correlation tables mentioned in your doc?
-
-### 9. Data Quality for Research
-**"What validation is needed to ensure research-quality data?"**
-- Which fields are required for research vs. optional for operations?
-- Should there be coherence checks? (e.g., evidence type must match claimed impact type)
-- Review/approval process before data is used in research publications?
-- How do you handle data quality issues from less sophisticated chapters?
-
-### 10. Built-In Definitions and Help
-**"The survey toolkit includes a glossary with precise definitions. Should these be built into the platform?"**
-- Tooltip/help text on every field with official definitions?
-- Searchable glossary within platform?
-- Contextual help that explains the framework as users enter data?
-- Links to examples of good data entry?
+### Part 4: Clarify Scope & Next Steps (15 min)
+MVP, timeline, deliverables
 
 ---
 
-## Priority 1: User Workflow Walkthroughs (REQUEST THESE!)
+# PART 1: Show Me How You Work Today
 
-Ask them to walk you through these specific scenarios step-by-step:
+## Current State & Pain Points
 
-### Walkthrough 1: Chapter User Journey
-**"Can you walk me through what happens when a chapter director logs in for the first time and wants to enter data about their programs?"**
+### 1. Show Me Your Current Research Process
+**"Can you show me a research paper you've published or are working on that uses YWCA network data?"**
 
-- What does the dashboard look like when they first log in?
-- What options do they see?
-- How do they add new program data? (Forms? Bulk upload? Both?)
-- What fields are they filling out?
-- What happens after they submit?
-- What can they see immediately?
+**If they have one:**
+- Walk through it together
+- What data did you need from YWCA chapters?
+- How did you get that data? (survey? manual collection?)
+- What was hard to get?
+- What took the most time?
+- How did you aggregate across 196 chapters?
+- How did you ensure data quality?
 
-### Walkthrough 2: Comparing Data with Trauma Graph
-**"Walk me through a real example: A chapter wants to understand financial trauma in their area and compare it to their client data."**
+**If they don't have one yet:**
+- "Walk me through a paper you plan to publish"
+- What hypothesis are you testing?
+- What data do you need?
+- How would you get it today?
 
-- Where do they click to access the trauma graph?
-- How do they select their geographic area?
-- What does the split-screen view actually show? (Can you sketch this?)
-- What data from their side appears on the left/right?
-- What trauma graph data appears on the other side?
-- Can they export/save this comparison?
-- What actions can they take based on what they see?
-
-### Walkthrough 3: Cross-Chapter Discovery
-**"Show me how a chapter in Buffalo would discover what a chapter in Rochester is doing."**
-
-- Where do they navigate to see other chapters?
-- What information can they see about other chapters? What can't they see?
-- Can they filter/search? By what criteria?
-- What happens if they want to "adopt" or learn from another chapter's program?
-
-### Walkthrough 4: Headquarters National View
-**"How does the national headquarters use this differently than a local chapter?"**
-
-- What aggregated data do they see?
-- Can they drill down into individual chapters?
-- How do they generate reports for funders?
-- What's the workflow for the surveys they currently send out?
-
-### Walkthrough 5: Grant Writing Use Case
-**"Take me through a real scenario: A chapter needs to write a grant application by Friday. How does this platform help them?"**
-
-- What reports do they generate?
-- What specific data points do they need?
-- What format does the output need to be? (PDF? Excel? Both?)
-- Can they customize reports or are they templated?
-
-### Walkthrough 6: Survey Replacement Scenario (NEW!)
-**"Walk me through how the platform replaces the annual survey. What's different?"**
-
-OLD WAY (Survey):
-- Chapter receives survey link
-- Spends 3 weeks filling it out
-- Never sees data again
-
-NEW WAY (Platform):
-- Chapter does... what exactly?
-- How often do they log in?
-- What triggers them to update data?
-- How does HQ get the data they used to get from surveys?
-
-### Walkthrough 7: Adding a New Program (BASED ON SURVEY Q27-34)
-**"A chapter just launched a new domestic violence housing program. Walk me through how they add it to the platform."**
-
-Based on the survey, they need to enter:
-- Program name
-- Objectives/purpose
-- Languages delivered in
-- Impact areas (Women & Girls Empowerment, Health & Safety, Racial Justice)
-- Type of violence addressed (Racial, Gender-Based, Economic)
-- Resources leveraged
-- Activities (specific to violence type)
-- How it addresses violence
-- Evidence of impact
-
-Questions:
-- Do they enter all this at once or progressively?
-- Can they save a draft and come back?
-- How do they update program info as it evolves?
+→ **Listen for:** Integration challenges, data quality issues, current workarounds
 
 ---
 
-## Priority 2: Data Questions
+### 2. Show Me How YWCA Chapters Use Data Today
+**"Walk me through how a chapter currently answers the question: 'How many women did we serve last year?'"**
 
-### Data Input (NOW INFORMED BY THE SURVEY!)
-1. **Survey transformation: "I've reviewed the 61-page survey. Is the goal to transform this survey into the platform's data model?"**
-   - Should every survey question become a field in the platform?
-   - Or are some questions only for annual surveys, not continuous tracking?
+- Where do they look for this data?
+- Is it in one place or scattered across files?
+- How long does it take to gather?
+- How confident are they in the accuracy?
+- What happens after they report it?
 
-2. **Data migration from October 2024 survey:**
-   - Should we import existing survey responses as baseline data?
-   - Do chapters need to see their historical survey answers?
-   - Should this data be editable or locked as historical?
+**Follow-up:** "Show me the current survey process from start to finish"
+- Chapter receives survey link...
+- Then what happens?
+- How long does it really take?
+- What's the most painful part?
 
-3. **Update frequency for different data types:**
-   - **Demographics served**: Updated how often? (monthly? quarterly? as changes occur?)
-   - **Financial data**: Updated when? (monthly, after fiscal year close, when 990 filed?)
-   - **Programs**: Added immediately when launched? Updated how often?
-   - **Impact evaluations**: Continuous or periodic assessment?
-   - **Staffing numbers**: Real-time or periodic?
-
-4. **Conditional logic from survey:**
-   - The survey has lots of "Display if..." logic (e.g., file upload if selected)
-   - Should the platform replicate this conditional logic?
-   - Or is the platform more flexible since data entry isn't one-time?
-
-5. **File management:**
-   - Survey allows uploading 990s, budgets, strategic plans, impact docs
-   - Should platform have version control? (e.g., upload 2023 990, then 2024 990)
-   - Should files be tagged/categorized?
-   - Who can access uploaded files? (just the chapter, or network-wide?)
-
-### Data Output
-5. **What specific reports do they need?**
-   - Can you show me examples of reports they wish they had?
-   - What does a "compelling grant narrative" report look like?
-   - What formats? (PDF, Excel, Word, presentations?)
-
-6. **What automatic calculations are most important?**
-   - You mentioned percentages - what else?
-   - Averages? Trends over time? Comparisons?
-   - Geographic aggregations?
-
-### Trauma Graph Data
-7. **What exactly is in the trauma graph dataset?**
-   - What metrics/dimensions? (financial trauma, domestic violence severity - what else?)
-   - What geographic levels? (state, county, city, neighborhood, zip code?)
-   - How often is this data updated?
-   - Where does this data come from? (10Seven's research - but what's the source?)
-
-8. **How does trauma graph data map to chapter data?**
-   - By geography only?
-   - By demographic characteristics?
-   - By program type?
+→ **Listen for:** Where data lives now, what's hard to find, why it takes 3 weeks
 
 ---
 
-## Priority 3: Technical Architecture Questions
+### 3. Show Me How You Currently Categorize Programs
+**"Walk me through how you categorize a chapter's program into your framework (Racial Violence, Gender-Based Violence, Economic Violence)"**
 
-### Multi-Tenancy
-9. **What data can chapters see across the system?**
-   - Can Buffalo see Rochester's raw client data? (I assume NO)
-   - Can they see aggregated/anonymized data?
-   - What's public within the network vs. private to each chapter?
+- Show me an example program and how you'd categorize it
+- Can you show me one that was challenging to categorize?
+- What did you do when a program addressed multiple violence types?
+- What about programs that don't fit any category?
 
-10. **What can national headquarters see vs. chapters?**
-    - Full access to all chapter data?
-    - Separate permission levels?
-    - Can they edit chapter data or only view?
+**Follow-up:** "How do chapters currently describe their programs?"
+- Do they use your framework language or their own?
+- How do you translate their language to your framework?
 
-### Licensing & Access
-11. **How does licensing affect features?**
-    - If a chapter only licenses the data warehouse (not trauma graph), what features are hidden?
-    - If someone only licenses trauma graph (like Urban Institute), what do they see?
-    - Do individual chapters control their own license or does national HQ?
-
-12. **User accounts: How does authentication work?**
-    - Individual users or shared chapter accounts?
-    - How many users per chapter?
-    - Role types? (admin, viewer, data entry, etc.)
-
-### Integration with Existing Tools
-13. **Qualtrics integration: What's the priority here?**
-    - Do you want to keep using Qualtrics for surveys?
-    - Should survey data automatically flow into this platform?
-    - API integration or manual export/import?
-
-14. **What about Max QDA, Tableau, Atlas?**
-    - Should this platform replace them entirely?
-    - Or integrate with them?
-    - What features from those tools do you want to replicate?
+→ **Listen for:** Edge cases, flexibility needs, current workarounds for programs that don't fit
 
 ---
 
-## Priority 4: Scope & Phasing Questions
+### 4. The Trauma Graph - Show Me What It Is
+**"Can you show me the trauma graph? Let's look at it together."**
 
-### MVP Definition
-15. **What's the minimum viable product for YWCA launch?**
-    - What must be in version 1?
-    - What can wait for version 2?
-    - What's the timeline expectation?
+- What am I looking at?
+- What geographic levels does it cover? (zip code? county? neighborhood?)
+- What trauma indicators are shown? (financial trauma, domestic violence - what else?)
+- How often is this data updated?
+- Where does the underlying data come from?
 
-16. **Which component is more urgent?**
-    - Data warehouse or trauma graph?
-    - Can we build/launch them separately?
+**Follow-up:** "How does a chapter use this today?"
+- Do they access it now?
+- Have you shown it to any chapters?
+- What was their reaction?
+- What questions did they have?
 
-### Feature Prioritization
-17. **If you had to rank these features by importance, what's the order?**
-    - Data entry/storage
-    - Automatic calculations/synthesis
-    - Report generation
-    - Cross-chapter discovery
-    - Trauma graph visualization
-    - Split-screen comparison
-    - Survey tools
-    - Mobile access
-
-18. **What's a "must-have" vs. "nice-to-have"?**
-    - Advanced statistical analysis (regressions)?
-    - Data visualization/charts?
-    - Real-time collaboration?
-    - Notification/alerts?
-    - Mobile app or responsive web is enough?
+→ **Listen for:** Geographic granularity, what data exists, how it's actually used
 
 ---
 
-## Priority 5: Success Criteria & Use Cases
+### 5. Current Tools & Frustrations
+**"Show me the tools you use today for research and data analysis"**
 
-### Measuring Success
-19. **How will you know this platform is successful?**
-    - Adoption rate by chapters?
-    - Grants won?
-    - Time saved?
-    - Data quality improvement?
+- Max QDA - what do you use it for?
+- Tableau - what do you visualize?
+- Qualtrics - how does it fit in?
+- Excel/SPSS/R - what analysis do you do?
 
-20. **What would cause this project to fail?**
-    - Too complex?
-    - Too slow?
-    - Missing key features?
-    - Poor adoption?
+**Follow-up:** "What frustrates you most about your current setup?"
+- Where does data get stuck?
+- What takes way longer than it should?
+- What do you wish you could do but can't?
 
-### Real Examples
-21. **Can you show me the actual YWCA impact survey?**
-    - Walk through each section
-    - What questions are asked?
-    - What do the responses look like?
-
-22. **Can you show me real (anonymized) data?**
-    - Sample data from a chapter
-    - What trauma graph data looks like
-    - Example reports they currently struggle to create
+→ **Listen for:** What's working, what's broken, what they're trying to accomplish
 
 ---
 
-## Priority 6: Process & Workflow Questions
+# PART 2: Show Me the Artifacts
 
-### Data Governance
-23. **Who owns what data?**
-    - Chapters own their data - what does that mean technically?
-    - Can they delete their data?
-    - Can they export everything and leave?
-    - What happens if a chapter closes?
+## Real Examples & Documents
 
-24. **Data quality: Who ensures accuracy?**
-    - Is there data validation?
-    - Who reviews/approves data entries?
-    - What happens if national HQ sees bad data from a chapter?
+### 6. Show Me Grant Applications
+**"Can you show me a grant application a chapter has submitted, or one they're working on?"**
 
-### Support & Maintenance
-25. **Who will support end users?**
-    - 10Seven team?
-    - National YWCA staff?
-    - Each chapter self-supports?
+**If they have one:**
+- What data did the chapter need for this grant?
+- Where did they get it?
+- What was missing or hard to get?
+- How long did it take them to compile the data?
+- What would have made this easier?
 
-26. **How tech-savvy are the actual users?**
-    - Can you describe the least technical person who will use this?
-    - What's their comfort level with technology?
-    - What devices will they use? (Desktop, tablet, phone?)
+**If they don't have one:**
+- "What does a typical grant application require?"
+- What sections need data vs. narrative?
+- What funders are they typically applying to?
+
+→ **Listen for:** What "grant-ready report" actually means, what data is critical
 
 ---
 
-## Key Artifacts to Request
+### 7. Show Me Survey Responses
+**"Can you show me actual survey responses from chapters (anonymized if needed)?"**
 
-### Please share these before or during the meeting:
+- How complete are the responses typically?
+- What questions do chapters struggle with most?
+- What data is highest quality vs. lowest?
+- Do chapters provide narrative or just numbers?
 
-- ✅ YWCA impact survey (full version)
-- ✅ Previous technical proposal
-- ✅ Sample data from chapters (anonymized)
-- ✅ Example reports they want to generate
-- ✅ Screenshots/demos of Max QDA, Tableau, Atlas showing what features they use
-- ✅ Current trauma graph mockups you've created
-- ✅ Sketches/wireframes of what they envision (if any exist)
-- ✅ List of all data fields/metrics they want to track
+→ **Listen for:** Data quality issues, what's easy vs. hard for chapters to answer
 
 ---
 
-## Suggested Meeting Flow
+### 8. Show Me How You Currently Map Data
+**"How do you currently connect YWCA chapter data to trauma graph data?"**
 
-**Part 1 (30 min): Understand their current tools**
-- Show me how you use each platform today
-- What do you love about each?
-- What frustrates you?
+- Show me an example
+- Chapter serves [geographic area], trauma graph has data at [level] - how do you match?
+- What happens when a chapter serves multiple zip codes with different trauma indicators?
+- Have you done this analysis before or is this aspirational?
 
-**Part 2 (45 min): User journey walkthroughs**
-- Walk through the 5 scenarios above
-- Draw/sketch the screens as we talk
-- Identify happy paths and edge cases
-
-**Part 3 (30 min): Data deep dive**
-- Show me the survey and real data
-- Explain trauma graph in detail
-- Map data inputs to outputs
-
-**Part 4 (15 min): Priorities and next steps**
-- What MUST be in v1?
-- What's the timeline?
-- What materials do I still need?
+→ **Listen for:** Actual integration patterns, geographic matching challenges
 
 ---
 
-## Questions You Should Be Able to Answer After Thursday
+### 9. Show Me What "Compelling Narrative" Looks Like
+**"You mentioned helping chapters 'build a compelling narrative to raise money' - can you show me an example?"**
 
-By the end of the meeting, you should clearly understand:
+- What does that narrative look like?
+- What data supports it?
+- What makes it compelling vs. just factual?
+- Is it mostly narrative with some data, or mostly data with some narrative?
 
-1. ✅ **Who are the users** and what do they need to do?
-2. ✅ **What data goes in** and what data comes out?
-3. ✅ **How do the two components** (warehouse + trauma graph) work together?
-4. ✅ **What does success look like** for a chapter using this?
-5. ✅ **What's the MVP** vs. future enhancements?
-6. ✅ **What are the technical constraints** (performance, security, compliance)?
-7. ✅ **What's the timeline** and budget considerations?
+→ **Listen for:** Balance of story vs. statistics, what funders respond to
 
 ---
 
-## Red Flags to Watch For
+# PART 3: Walk Through Integration Scenarios
 
-Listen for these potential issues:
+## End-to-End Workflows
 
-⚠️ **Vague requirements**: If they can't describe specific workflows, ask for real examples
-⚠️ **Scope creep**: If everything is "must have," push back and prioritize
-⚠️ **Unrealistic expectations**: If they expect this built in 2 weeks, manage expectations
-⚠️ **Missing stakeholders**: If YWCA users aren't involved, that's a risk
-⚠️ **Unclear data**: If they can't show you actual data examples, that's a blocker
+### 10. Scenario: YWCA Data → 10Seven Research → Publication
+**"Let's walk through a specific scenario: How does data from Buffalo chapter's housing program end up in your research on economic violence?"**
 
----
+**Step by step:**
+- Buffalo enters data about their housing program (where? how?)
+- That data gets to 10Seven (how?)
+- You aggregate it with 195 other chapters (how?)
+- You analyze it (using what tools?)
+- You correlate it with trauma graph data (how?)
+- You publish findings (where? what does it say?)
 
-## Your Goal for Thursday
-
-**Walk away with enough clarity to create:**
-1. A technical architecture proposal
-2. Feature prioritization (MVP vs. v2)
-3. Realistic timeline estimate
-4. List of any remaining unknowns
-
-**You should be able to answer: "What am I actually building and for whom?"**
+→ **Listen for:** Every integration point, every transformation, every place data could get stuck
 
 ---
 
-## Pro Tips
+### 11. Scenario: Chapter Uses Platform for Grant
+**"Walk me through: Chapter director needs to write a grant application by Friday. It's Monday morning."**
 
-- **Draw everything**: Sketch screens, data flows, architecture diagrams during the call
-- **Use their language back**: When they say "data intranet," use that term in your proposals
-- **Show, don't tell**: Ask them to share their screen and show you their current tools
-- **Real examples only**: Every time they describe a feature, ask "can you show me a real example?"
-- **Repeat back**: After each section, summarize what you heard and confirm understanding
-- **Take notes on pain points**: When they say "this frustrates us," write it down - that's a key requirement
+**Current state (without platform):**
+- What do they do Monday?
+- Where do they look for data?
+- What takes the most time?
+- Do they finish by Friday?
 
-Good luck with your Thursday meeting!
+**Future state (with platform):**
+- What changes?
+- What do they do instead?
+- How much time does it save?
+- What do they still have to do manually?
+
+→ **Listen for:** Time saved, what platform must provide, what remains manual
+
+---
+
+### 12. Scenario: Cross-Chapter Learning
+**"Scenario: Buffalo wants to learn about childcare programs in New York. Walk me through how they'd do this with the platform."**
+
+- What exactly are they looking for? (ideas? best practices? data?)
+- What can they see about Rochester's childcare program?
+- Can they see specific outcomes/data or just that Rochester has a childcare program?
+- Can they contact Rochester directly?
+- Is data anonymized or attributed?
+
+→ **Listen for:** What "cross-chapter discovery" actually means, privacy boundaries
+
+---
+
+### 13. Scenario: Edge Case Program
+**"Give me a real example of a program that didn't fit neatly into your framework"**
+
+- What was the program?
+- Why didn't it fit?
+- What did you do?
+- How did you categorize it in the end?
+- Did this cause problems for analysis?
+
+**Follow-up:** "Can a program address all 3 violence types?"
+- If yes, how do you handle that?
+- If no, how do you decide which one?
+
+→ **Listen for:** How rigid the framework really is, how they handle edge cases
+
+---
+
+# PART 4: Clarify Scope & Next Steps
+
+## MVP Definition & Priorities
+
+### 14. What Must Be in Version 1?
+**"If you had to pick the THREE most important things this platform must do on day 1, what would they be?"**
+
+Force prioritization. Listen for what they say first.
+
+**Follow-up:** "Can the data warehouse launch without trauma graph integration, or must they launch together?"
+
+→ **Listen for:** What's truly essential vs. nice-to-have
+
+---
+
+### 15. Survey Replacement Strategy
+**"After this platform launches, does the annual survey go away completely, or does it continue in some form?"**
+
+- What happens to the survey workflow?
+- Are there questions that can only be asked annually?
+- Do chapters fill out the survey once to seed the platform?
+
+**Follow-up:** "Should we import the October 2024 survey data as baseline, or start fresh?"
+
+→ **Listen for:** Whether this replaces or supplements survey, data migration expectations
+
+---
+
+### 16. Timeline & Expectations
+**"When do you need this? What's the timeline you've committed to YWCA or funders?"**
+
+- What's the launch date?
+- Are there milestones before full launch?
+- Can we launch to a pilot group first?
+
+→ **Listen for:** Real deadline vs. aspirational timeline
+
+---
+
+### 17. Success Metrics
+**"How will you know this platform is successful 6 months after launch?"**
+
+- Adoption rate by chapters?
+- Grants won?
+- Time saved?
+- Research published?
+- Data quality improved?
+
+→ **Listen for:** What success actually looks like to them
+
+---
+
+## Follow-Up & Next Steps
+
+### 18. User Testing
+**"Can we test an early version with 2-3 actual chapter directors before building the full thing?"**
+
+- Who would be good chapters to include?
+- Can you introduce me to them?
+- Small, medium, and large chapter?
+
+→ **Get:** Contact info, permission to talk to real users
+
+---
+
+### 19. Materials & Access
+**"What materials can you share with me after this meeting?"**
+
+**Request:**
+- October 2024 survey responses (anonymized)
+- Example research papers using YWCA data
+- Grant applications from chapters
+- Access to trauma graph (if it's built)
+- Any previous technical proposals or specs
+
+→ **Get:** Artifacts to study, baseline understanding
+
+---
+
+### 20. Confirm Understanding & Next Steps
+**"Let me summarize what I'm hearing and you tell me if I got it right..."**
+
+Recap:
+1. The core problem you're solving
+2. How the three pieces integrate (YWCA data + 10Seven research + Trauma Graph)
+3. What must be in v1
+4. What success looks like
+
+**Then:** "Based on this conversation, here's what I'll create next..."
+- Detailed technical architecture proposal
+- Data model design
+- Wireframes/prototype for key workflows
+- Timeline estimate
+
+"I'll have this ready in [timeframe]. Does that work?"
+
+→ **Confirm:** Shared understanding, clear next deliverables
+
+---
+
+# REFERENCE: Key Things to Observe
+
+## During the Meeting, Watch For:
+
+### Integration Challenges:
+- How do they currently connect YWCA data → 10Seven research → Trauma Graph?
+- Where does integration break down today?
+- What's manual vs. automated?
+- What takes the most time?
+
+### Edge Cases:
+- Programs that don't fit the framework
+- Chapters that serve multiple geographies
+- Data that's missing or low quality
+- Exceptions to the rules
+
+### Pain Points (Listen for These Phrases):
+- "This takes forever..."
+- "We have to manually..."
+- "There's no good way to..."
+- "Chapters struggle with..."
+- "We wish we could..."
+
+### Assumptions to Validate:
+- Is data individual client records or aggregate numbers?
+- Is update frequency monthly, quarterly, or as-needed?
+- Do chapters actually want cross-chapter discovery?
+- Is trauma graph integration the killer feature or nice-to-have?
+
+---
+
+# MEETING PREP CHECKLIST
+
+## Before Thursday:
+- [ ] Review this questions doc
+- [ ] Review PROJECT_UNDERSTANDING.md
+- [ ] Have notepad ready to sketch
+- [ ] Screen sharing set up if remote
+- [ ] Recording set up (with permission)
+
+## During Thursday:
+- [ ] Let them show you (screen share, documents, tools)
+- [ ] Take notes on pain points and frustrations
+- [ ] Sketch workflows as they describe them
+- [ ] Ask "can you show me an example?" frequently
+- [ ] Confirm understanding as you go
+
+## After Thursday:
+- [ ] Send summary of what you heard
+- [ ] Request any materials they mentioned
+- [ ] Confirm next deliverables and timeline
+- [ ] Update PROJECT_UNDERSTANDING.md with new info
+
+---
+
+# PRO TIPS
+
+**Best Practices for This Meeting:**
+
+1. **"Show me" > "Tell me"**
+   - Ask them to share their screen
+   - Look at actual documents together
+   - See their current tools in action
+
+2. **Real examples > Hypotheticals**
+   - "Show me a program that was hard to categorize"
+   - Not "How would you categorize a complex program?"
+
+3. **Current reality > Envisioned future**
+   - "How do you do this today?"
+   - Not "How do you want to do this?"
+
+4. **Follow the energy**
+   - When they get excited or frustrated, dig deeper
+   - That's where the real requirements are
+
+5. **Draw everything**
+   - Sketch workflows, data flows, screens
+   - Visual understanding > verbal description
+
+6. **Confirm as you go**
+   - "Let me make sure I understand..."
+   - Repeat back what you heard
+   - Catch misunderstandings early
+
+7. **Embrace silence**
+   - Let them think
+   - Don't fill every pause
+   - Best insights come after pauses
+
+8. **"What else?"**
+   - When they finish an answer, ask "What else?"
+   - Often the most important thing comes 3rd or 4th
+
+---
+
+# RED FLAGS TO WATCH FOR
+
+⚠️ **"We envision..." without showing current state** → Ask to see how they do it today first
+
+⚠️ **Vague on actual workflows** → Keep asking for specific examples
+
+⚠️ **Everything is "must-have"** → Force prioritization: "If you could only have ONE thing..."
+
+⚠️ **No real examples to show** → This might be more aspirational than they let on
+
+⚠️ **Can't show you the trauma graph** → Is it actually built? Is it just a concept?
+
+⚠️ **Haven't talked to YWCA users** → Who validated that this is what chapters need?
+
+⚠️ **Unrealistic timeline** → "We need this in 2 weeks" = manage expectations now
+
+---
+
+# YOUR GOAL
+
+**By end of Thursday, you should be able to answer:**
+
+✅ How do they currently do their work?
+✅ Where does it break down?
+✅ What does the trauma graph actually show?
+✅ How do the three pieces (YWCA, 10Seven, Trauma Graph) integrate?
+✅ What are real edge cases vs. theoretical ones?
+✅ What must be in v1?
+✅ What does success look like?
+
+**You should NOT know yet:**
+❌ Exact data model design
+❌ Technical architecture specifics
+❌ UI/UX designs
+❌ Implementation details
+
+**Those come after you understand their world.**
+
+---
+
+# OPENING LINE
+
+> "Thanks for taking the time today. I've reviewed the survey and your framework document, and I have a lot of questions. But before I ask anything, I'd love to just see how you work today. Can you show me [a research paper / the trauma graph / how you currently use YWCA data]? Let's start there and I'll ask questions as we go."
+
+**This sets the tone: Show me your world, I'm here to understand.**
+
+Good luck! 🚀
