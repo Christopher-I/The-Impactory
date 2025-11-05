@@ -1,18 +1,19 @@
 # Quick Reference - YWCA Data Platform Project
 
-## ⚡ YOUR ROLE: Product Designer + Developer
+## ⚡ YOUR ROLE: Full-Service Product Agency
 
-**CRITICAL INSIGHT**: They don't know what the platform should look/feel like yet. They hired you to:
-1. **Help them figure out the UX/UI** (design collaboration)
-2. **Build it** (development)
+**You're the complete package**:
+1. **Discovery & Strategy**: Help them understand their pain points better
+2. **Product Design**: Design the UX/UI collaboratively with them
+3. **Development**: Build and deliver the platform
 
-**This changes everything:**
-- Thursday is NOT "tell me your requirements"
-- Thursday IS "let's figure out together what makes sense"
-- You lead with concepts, they react
-- Collaborative design, not requirements extraction
+**This means Thursday is BOTH:**
+- Deep requirements discovery (ask questions, understand workflows)
+- AND collaborative design (show concepts, get reactions, sketch together)
 
-**See**: `DESIGN_COLLABORATION_APPROACH.md` and `WIREFRAME_CONCEPTS.md` for full strategy
+**You're not just extracting requirements OR just showing designs - you're doing both as their trusted partner.**
+
+**See**: `DESIGN_COLLABORATION_APPROACH.md`, `WIREFRAME_CONCEPTS.md`, and `questions_for_clients.md` for full strategy
 
 ---
 
@@ -420,23 +421,28 @@ You now understand:
 - ✅ **The data model**: Every survey question = a database field
 - ✅ **The framework**: 4 impact pillars, 3 impact types, 3 violence types
 - ✅ **The dual purpose**: Operational tool for chapters + research infrastructure for 10Seven
-- ✅ **YOUR ROLE**: Design partner + developer (they need you to help figure out the UX)
+- ✅ **YOUR ROLE**: Full-service agency - discovery + design + development
 
 ---
 
 ## Bottom Line for Thursday
 
-**You're not there to take requirements.**
-**You're there to collaborate on design.**
+**You're their complete partner**: Discovery + Design + Development
+
+**Thursday's dual approach:**
+1. **Understand deeply** (ask questions, explore workflows, identify pain points)
+2. **Show possibilities** (present concepts, get reactions, sketch together)
 
 Come with:
-- ✅ Wireframe concepts
-- ✅ Design principles
-- ✅ Understanding of the problem
+- ✅ Deep questions about requirements and workflows
+- ✅ Wireframe concepts to guide design direction
+- ✅ Design principles to propose
+- ✅ Understanding of the problem space
 
 Leave with:
-- ✅ Direction on UX approach
-- ✅ Validation of assumptions
-- ✅ Clear next steps
+- ✅ Requirements clarity (data, users, workflows)
+- ✅ UX direction (which approach resonates)
+- ✅ MVP scope agreement
+- ✅ Timeline and next steps
 
 Then: Build with confidence. 🚀
