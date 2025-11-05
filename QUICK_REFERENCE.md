@@ -184,11 +184,11 @@ ORGANIZATIONAL EFFORTS (non-program activities)
 
 ---
 
-## ⭐ The 10 Most Critical Questions for Thursday
+## ⭐ The 5 MUST-ANSWER Questions for Thursday
 
-**UPDATED with research infrastructure insights! Ask these first:**
+**UPDATED - Chris already built trauma graph, budget not a concern. Focus on these:**
 
-### Core Questions (1-5):
+### The Critical Five:
 
 ### 1. Survey Replacement Strategy
 **"Is the platform meant to completely replace this annual survey, or transform it into continuous data entry?"**
@@ -227,7 +227,7 @@ ORGANIZATIONAL EFFORTS (non-program activities)
 - What's public within the network vs. private to each chapter?
 - Does this change if chapters opt-in to sharing?
 
-### Research Infrastructure Questions (6-10):
+### Important (But Not Blockers) (6-10):
 
 ### 6. Research vs. Operations Balance
 **"I see this is research infrastructure with an impact measurement framework. What's the balance between research needs and operational needs?"**
