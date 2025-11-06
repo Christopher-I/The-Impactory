@@ -233,32 +233,201 @@ Based on the 61-page YWCA Impact Survey structure:
 
 ---
 
+## NEW INSIGHTS (From Impact Briefing)
+
+### Integration Challenge Validated ✅
+**Chris's insight was their #1 finding**: "Impact areas that do not account for intersectionality allow the amazing work of our local associations to get lost."
+
+**Evidence of Integration as Core Challenge**:
+- **r = .88** correlation between Racial Violence and Gender-Based Violence
+- **r = .853** correlation between Racial Violence and Economic Violence
+- **r = .782** correlation between Economic Violence and Beneficiary Impact
+
+**Real LA Quote**: "It is Black maternal health week this week, And I did include that under, I believe, sexual, racial and economic violence [in the survey] because I believe we address all of those issues."
+
+**Platform Implication**: Edge cases are the norm, not the exception. System MUST support multiple violence type tagging.
+
+---
+
+### Program Categorization Strategy (NOW CLEAR) ✅
+
+**Moving From**:
+- ❌ Old: "Health & Safety," "Women's Empowerment," "Racial Justice" (rigid categories)
+
+**Moving To**:
+- ✅ New: Functional categories that can address multiple violence types
+
+**6 Functional Program Categories**:
+1. **Housing** (30+ programs, 20+ LAs) - Emergency, transitional, DV shelters, homeless services
+2. **Domestic Violence & Sexual Assault** (35+ programs, 20+ LAs) - Shelters, case management, legal, counseling
+3. **Adult Education & Well-Being** (60+ programs, 35+ LAs) - Job training, financial literacy, senior care, language services
+4. **Youth Education & Well-Being** (80+ programs, 40+ LAs) - Childcare, early learning, after school, leadership development
+5. **Community Education & Awareness** (10+ programs, 15+ LAs) - Outreach, events, community engagement
+6. **Policy & Advocacy** (20+ programs, 15+ LAs) - Legislative advocacy, policy training, civic engagement
+
+**Each program can address Racial, Gender-Based, and/or Economic violence simultaneously.**
+
+**This is a tagging system, not a rigid hierarchy.**
+
+---
+
+### The Three Impact Levels (CRITICAL FRAMEWORK) ✅
+
+**Beneficiary Level** (Direct impact on people served):
+- Increase access to basic needs
+- Increase confidence/skills
+- Increase sense of belonging/safety
+- **>80% of current programs** operate here
+
+**Institutional Level** (Impact on institutions perpetuating inequity):
+- Compel institutions to engage on social issues
+- Get institutions to recognize their role in harm
+- Get institutions to take steps to undo harm
+- **<40% of current programs** operate here
+
+**Societal Level** (Impact on policy, narrative, lasting change):
+- Shift public communication about issues
+- Reduce/eliminate social denial
+- Change public policy
+- Position YWCA as leader in solutions
+- **<10% of current programs** operate here
+
+**The Gap**: LAs are excellent at beneficiary level but want to move up to institutional/societal levels. This requires **data capability and research support**.
+
+---
+
+### Current Data Challenges (THEIR PAIN POINTS) ✅
+
+**LA Quote**: "So I guess, honestly, more support with our systems and data would be huge from YWCA USA…Our systems are terrible."
+
+**LA Quote**: "So for domestic violence and sexual assault, there is a state mandated program that you have to use for data entry...We do something else for our timekeeping...all of these things are like completely separate systems."
+
+**What LAs Have**:
+- Good at measuring **outputs** (how many people served, hotline calls, kids in programs)
+- Multiple disconnected systems (DV tracking, timekeeping, case notes all separate)
+- State-mandated systems for certain programs
+
+**What LAs Struggle With**:
+- Measuring **outcomes** (what actually changed for people)
+- Tracking individual stories/progress without good systems
+- Consistent data practices across LAs
+- Translating data into policy advocacy
+
+**What LAs Want**:
+- "Data analytics" (though this means different things to different LAs)
+- Tools to demonstrate impact beyond numbers
+- Support and guidance on data collection/usage
+
+---
+
+### The "Best Kept Secret" Problem ✅
+
+**Key Finding**: LAs are known for individual programs (e.g., "the childcare place") but not recognized as YWCA brand.
+
+**LA Quote**: "we're the best kept secret in [community], and we're tired of being the best kept secret. Not understanding that means more work, because then you gotta document and prove it."
+
+**Why This Matters for the Platform**:
+- Reports must help LAs demonstrate impact beyond beneficiary level
+- Need to support policy advocacy and institutional engagement
+- Must position LAs as data-backed leaders in their communities
+
+---
+
+### Network Scale & Reach ✅
+
+**Impact Numbers**:
+- **1,445,489 beneficiaries** reached (unduplicated)
+- **98%** women and girls
+- **80%** children
+- **>70%** people of color
+- **>80%** low income (<$35K annually)
+- **250+ unique programs** reported
+- **167 LAs** responded to survey (out of 196)
+
+---
+
+### The 3% Who Are Succeeding at Policy Level ✅
+
+**Key Finding**: Among the small 3% of LAs with policy change as a stated goal, **100% say they're achieving it**.
+
+**What They Do**:
+- Government counterparts go through Justice Equity and Belonging training
+- Meet with bipartisan legislators to understand their priorities
+- Align advocacy work with what legislators are actually working on
+- Focus on police reform, probation reform, affordable housing, tenant rights
+- Use YWCA's mission/data to inform policy conversations
+
+**LA Quote**: "every year, our head of RSJ and advocacy, goes out and actually talks to a whole bunch of [bipartisan] legislators and says, 'What are you focused on this year?' [She] talks about how that ties into our mission and then comes back and goes…Here's our policy pillars, but based on what the legislators are actually going to do, here's what we're going to focus on this year…"
+
+**Lesson**: Data-backed advocacy works. But most LAs don't have the capability.
+
+---
+
+### What's Missing/Aspirational ⚠️
+
+Based on Nina's email: "some of it we don't have immediate access to, or it doesn't exist yet"
+
+**Likely Missing**:
+- Trauma graph (might only be concept/demo)
+- Published research papers using YWCA data (aspirational)
+- Formalized data-to-research pipeline (doesn't exist yet)
+- Consistent cross-LA data (everyone uses different systems)
+
+**Likely Available**:
+- Impact Survey responses (they have this)
+- Program categorization examples (shown in briefing)
+- LA quotes/stories from qualitative interviews (shown in briefing)
+- Impact framework (detailed in briefing)
+
+---
+
+### Updated Value Proposition ✅
+
+**Not just** "easier data entry" or "grant reports."
+
+**The platform must enable LAs to**:
+1. Move from beneficiary-level to institutional/societal-level impact
+2. Become data-backed policy advocates
+3. Position themselves as community leaders (not "best kept secret")
+4. Demonstrate outcomes, not just outputs
+
+---
+
 ## What We DON'T Know Yet (Need Thursday Meeting)
 
-### Critical Unknowns:
+### ANSWERED BY IMPACT BRIEFING ✅
 
-❌ **MVP Scope**: What MUST be in v1 vs. what can wait for v2?
-❌ **Cross-Chapter Visibility**: What can Buffalo see about Rochester's data?
-❌ **Survey Data Import**: Import October 2024 data or start fresh?
+✅ **Program Categorization**: Functional categories (Housing, DV/SA, Education, etc.) + violence type tagging
+✅ **Impact Framework Enforcement**: Flexible tagging system, not rigid hierarchy
+✅ **Edge Cases**: They're the norm (high correlations between violence types), system must support multiple tags
+✅ **Real Value Prop**: Enable LAs to move from beneficiary to institutional/societal level impact
+✅ **Data Challenges**: Multiple disconnected systems, good at outputs but struggle with outcomes
+✅ **Network Scale**: 1.4M+ beneficiaries, 167 LAs, 250+ programs
+
+### Critical Unknowns (PRIORITY FOR THURSDAY):
+
+❌ **What Actually Exists**: Does trauma graph exist or just demo? Published research papers? Data pipelines?
+❌ **How Data Flows**: From LA → through platform → to 10Seven research → to publications (show me current process)
+❌ **Grant Examples**: Show me actual grant applications that need data
+❌ **Research Examples**: Show me research papers using YWCA data (or drafts)
 ❌ **Data Granularity**: Individual client records or aggregate numbers only?
-❌ **Update Frequency**: How often do chapters update different data types?
-❌ **Report Structures**: What sections go in grant reports?
-❌ **Program Lifecycle**: Do programs have statuses, dates, budgets?
-❌ **Trauma Graph Integration**: Where accessed, how used?
-❌ **Permissions Model**: Who can see/edit what?
+❌ **Cross-Chapter Visibility**: What can Buffalo see about Rochester's programs/data?
+❌ **Survey Data Import**: Import October 2024 data as baseline or start fresh?
+❌ **MVP Scope**: What MUST be in v1 for policy advocacy support vs. what can wait?
 ❌ **Timeline**: When do they need this delivered?
 
 ### Important Unknowns:
 
-⚠️ Research vs. Operations balance
-⚠️ Impact framework enforcement (rigid or flexible?)
-⚠️ Statistical analysis capabilities needed
-⚠️ Data quality validation requirements
-⚠️ Built-in help/definitions
-⚠️ Licensing architecture details
-⚠️ Integration with existing tools (Qualtrics, Max QDA, Tableau)
-⚠️ Data governance and ownership specifics
-⚠️ Support and maintenance model
+⚠️ **Update Frequency**: How often do LAs update different data types?
+⚠️ **Report Structures**: What sections go in grant reports?
+⚠️ **Program Lifecycle**: Do programs have statuses, dates, budgets?
+⚠️ **Trauma Graph Integration**: Where accessed, how used in practice?
+⚠️ **Permissions Model**: Who can see/edit what? Who can hide data?
+⚠️ **Statistical Analysis**: What correlation/analysis capabilities needed?
+⚠️ **Data Quality Validation**: Required fields for research vs. optional for operations?
+⚠️ **Built-in Help**: What definitions/tooltips needed?
+⚠️ **Integration with Existing Tools**: Qualtrics, Max QDA, Tableau - how connect?
+⚠️ **Data Governance**: Ownership, usage rights, approval workflows?
 
 ---
 
