@@ -1,8 +1,8 @@
-# Session Context - The Impactory Project (UPDATED AFTER THURSDAY CALL)
+# Session Context - The Impactory Project (UPDATED AFTER MONDAY FOLLOW-UP)
 
-**Last Updated**: After Thursday call analysis
-**Status**: Complete pivot in project understanding
-**Next Step**: Monday follow-up meeting (11am PST) + waiting for materials from team
+**Last Updated**: After Monday follow-up call
+**Status**: Major scope expansion - survey builder + enhanced quant analysis now required
+**Next Step**: Receive materials from team + tech stack decision finalized
 
 ---
 
@@ -18,6 +18,64 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 
 ---
 
+## 🆕 MONDAY FOLLOW-UP: Major Scope Additions
+
+### New Requirements Identified:
+
+**1. Survey Builder Platform (NEW - Replacing Qualtrics)**
+- Build entire survey creation tool
+- Question types: multiple choice, text input, file uploads
+- **Skip logic** (conditional questions based on previous answers)
+- Data export to spreadsheet
+- Doesn't need to be fancy, just functional
+- **Goal**: ONE platform for surveys + quant + qual (not multiple tools)
+
+**2. Enhanced Quantitative Analysis (More Critical Than Initially Thought)**
+- Statistical analysis comparable to Qualtrics Stats IQ / SPSS
+- Correlations, p-values, statistical significance testing
+- Cross-tabulation (disaggregate by race, gender, geography)
+- Correlation matrices (extensive tables showing question-to-question correlations)
+- **Primarily TABLES** (90% of visualizations are tables, occasional pie/line charts)
+- Quick preliminary analysis + advanced analysis capabilities
+
+**3. Target Audiences Clarified**
+- **B2B Institutional**: Think tanks (Brookings, Aspen), Government bodies (mayors, local governments), Nonprofits
+- **B2C Individual**: Researchers, Financial counselors/advisors
+- **PARENTS = HUGE NEW MARKET** ⭐ (Most common inquiry, started in K-12 space, massive untapped potential)
+
+**4. Map Technology & Features Finalized**
+- **Mapbox confirmed** (Chloe loved the prototype)
+- Reference examples: Eviction Lab (Princeton), Mapping Police Violence, Urban Institute Wealth Dashboard
+- **Event-based filters (NEW concept)**: Time periods (pre/post admin changes), Policy events (SNAP cuts, federal layoffs), Historical periods (1950s displacement, interstate highways)
+- **Two vectors of premium features**:
+  - Vector 1: Static vs Dynamic maps (dynamic = zoom, interactive = PREMIUM)
+  - Vector 2: Basic vs Multidimensional overlays (severity only vs multiple dimensions overlaid = PREMIUM)
+- **Granularity = premium feature** (neighborhood-level detail more valuable than state-level)
+
+**5. Marketing Strategy Decided**
+- **DON'T market white label publicly** (except Ed Hub education side)
+- **DO market trauma graph licensing** as primary product
+- White label only offered when client specifically requests it
+- Reasoning: YWCA needs are "so basic" - people want trauma graphs, not white label
+
+**6. Trial Licensing Model (NEW)**
+- Conference attendees get **14-day access code** after Chloe's keynote speeches
+- Discount if they license after trial expires
+- Lead generation strategy for speaking engagements
+
+**7. Pricing Strategy**
+- Premium users: Usage-based pricing (so many maps, so much data)
+- Basic users: Potentially flat-rate
+- Advantage of usage: Easy to adjust rates across the board (e.g., 20 cents per minute)
+
+**8. Mobile Apps Confirmed**
+- All products will likely have mobile versions
+- This impacts tech stack decision significantly
+- Firebase stronger for mobile (native SDKs, offline sync)
+- OR hybrid approach (Supabase internal, Firebase mobile white label)
+
+---
+
 ## The Real Project: Three Products
 
 ### 1. Internal Data Warehouse - "The Patient Chart System" (PRIORITY #1)
@@ -27,6 +85,8 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 **The Analogy**: Hospital patient chart - see all labs, but also every doctor's notes from every visit. Click on Philadelphia and see what Chloe discovered 3 years ago, when, and why.
 
 **Core Features**:
+- **Survey Builder** (NEW): Replace Qualtrics - question types, skip logic, data collection
+- **Quantitative Analysis Suite**: Stats IQ-level analysis (correlations, p-values, cross-tabs, primarily tables)
 - Real-time collaborative qualitative coding (like Google Docs, not siloed like Max QDA)
 - Highlight transcript → tag with code → auto-tally across interviews
 - Split screen: transcript + field notes
@@ -38,26 +98,49 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 ### 2. Trauma Graph (PRIORITY #2 - Revenue Generator)
 **For**: Clients who pay to license access (view only)
 **Purpose**: Interactive maps + entire research ecosystem
+**Technology**: Mapbox (confirmed)
 
 **NOT just a map**. It's:
-- Data collection → qualitative coding → quantitative analysis
+- Data collection (via survey builder) → qualitative coding → quantitative analysis
 - Theme identification → geographic mapping → severity levels
-- Map visualization → insights repository → version history
+- Map visualization (with event-based filters) → insights repository → version history
 - Client licensing (view insights, never raw data)
 
+**Map Features & Filters**:
+- **Location-based**: Zip code, county, state, neighborhood (granularity = premium)
+- **Event-based (NEW)**: Time periods, policy events, historical periods
+- **Map types**: Severity maps, multiple oppressions overlays, historical trauma graphs
+- **Premium tiers**: Static vs Dynamic (zoom/interactive), Basic vs Multidimensional overlays
+
+**Reference Examples**: Eviction Lab (Princeton), Mapping Police Violence, Urban Institute Wealth Dashboard
+
 **The Vision**: Every neighborhood in US eventually has complete trauma data. Clients commission graphs, all feeds into one living system.
+
+**Trial Licensing**: 14-day access codes for conference attendees after keynote speeches (lead generation)
 
 ### 3. White Label for Clients (SECONDARY - Build Later)
 **For**: YWCA and future clients
 **Purpose**: Simplified data storage + optional trauma graph access
+**Marketing Strategy**: NOT marketed publicly (clients request it), EXCEPT Ed Hub (education side)
 
 **For YWCA**: Data entry, simple queries, replace endless surveys. Optional paid add-on for trauma graph.
+
+**Why not marketed**: Needs are "so basic" - clients want trauma graphs, not white label data storage.
 
 **Andrea's quote**: "I just want to build YWCA so they can leave us alone. They're not in a rush to do anything ever."
 
 ---
 
 ## Current Pain Points (Why They Need This)
+
+### #0: Multiple Platforms Don't Talk to Each Other (Critical - NEW)
+- Currently using: Qualtrics (surveys), Max QDA (qual coding), SPSS/R (advanced stats), Illustrator (maps)
+- Data lives in siloed platforms
+- Manual export/import between tools
+- Wish it was "all in one place"
+- Goal: Build ONE platform for entire workflow (surveys → qual → quant → maps)
+
+**What they need**: Integrated platform that handles entire research process.
 
 ### #1: Max QDA Is NOT Collaborative (Critical)
 - Says it's collaborative, but glitches with multiple users
@@ -150,23 +233,41 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 
 **Can This Be Built?** ✅ Yes
 
-**Complexity**: 7/10 (Medium-High, but nothing impossible)
-**Business Feasibility**: 8/10 (High - clear revenue model, real pain points)
-**Risk**: 4/10 (Medium-Low - internal first, clients later, proven model)
+**Complexity**: 7.5/10 → 8/10 (Increased due to survey builder + enhanced quant analysis + mobile apps)
+**Business Feasibility**: 8/10 (High - clear revenue model, real pain points, multiple target audiences)
+**Risk**: 4.5/10 (Medium - slightly higher due to expanded scope, but still internal-first approach)
+
+**Tech Stack Considerations**:
+- **Mobile apps confirmed** - impacts database choice
+- **Survey builder** adds complexity (skip logic, conditional questions)
+- **Statistical analysis** needs robust compute (correlations, p-values, regression)
+- **Real-time collaboration** remains critical
+- **Geographic queries** with PostGIS preferred
+- **Firebase vs Supabase**: Hybrid approach possible (Supabase internal, Firebase mobile white label)
 
 ---
 
 ## Next Steps
 
+### ✅ Completed:
+- Monday follow-up call (conducted)
+- Defined standardized language for three products
+- Clarified survey builder + quant analysis requirements
+- Confirmed Mapbox technology
+- Aligned on target audiences and premium features
+
 ### Waiting For (From Team):
-- Chloe: Step-by-step trauma graph process + St Paul report (severity levels)
-- Andrea: Architecture sketches (how products connect) + brand access flow
-- Team: YWCA grant examples (if available)
+- ✅ Nina: Qualtrics login credentials (for Chris to explore Stats IQ)
+- Pending: St Paul report examples (severity levels, multiple maps)
+- Pending: Andrea's architecture sketches
+- Pending: YWCA grant examples (if available)
 
 ### To Do (Chris):
-- Define standardized language for how three products communicate
-- Send architecture suggestions after receiving materials
-- Prepare for Monday follow-up (11am PST)
+- Explore Qualtrics Stats IQ (once login received)
+- Finalize tech stack decision (Supabase vs Firebase vs Hybrid)
+- Create alignment document for client review
+- Prepare proposal with cost/timeline estimates
+- Travel: Nov 28 - Dec 9 (email access only)
 
 ---
 
@@ -186,20 +287,33 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 - ✅ Trauma graph + internal warehouse IS the product
 - ✅ You were hired to build 10Seven's platform
 
+### After Monday Follow-Up:
+- ✅ Survey builder now required (replace Qualtrics entirely)
+- ✅ Quantitative analysis much more critical (Stats IQ, correlations, cross-tabs)
+- ✅ Parents identified as huge B2C market
+- ✅ Event-based filters needed (policy events, historical periods)
+- ✅ Two-tier premium model (static/dynamic + basic/multidimensional)
+- ✅ White label won't be publicly marketed
+- ✅ Mobile apps confirmed (impacts tech stack)
+- ✅ Mapbox confirmed as mapping technology
+
 ---
 
-## Files Created Today
+## Files Created/Updated
 
-**Transcript & Analysis**:
+**Thursday Call**:
 - thursday_call_transcript.md - Full transcript
 - CALL_ANALYSIS_thursday.md - Detailed 29-page analysis
 - THURSDAY_SUMMARY.md - Plain English summary
 
-**Updated Documentation**:
-- PROJECT_UNDERSTANDING_UPDATED.md - Updated project understanding
-- SESSION_CONTEXT_UPDATED.md - This file
+**Monday Follow-Up**:
+- monday_followup_transcript.md - Full transcript (pending creation)
+- monday_followup_analysis.md - Analysis of new requirements (pending creation)
 
-**Not Yet Committed** (waiting for your approval)
+**Updated Documentation**:
+- PROJECT_UNDERSTANDING_UPDATED.md - Updated with Monday findings
+- SESSION_CONTEXT_UPDATED.md - This file (updated with Monday findings)
+- STANDARDIZED_LANGUAGE_ARCHITECTURE.md - Architecture framework (may need updates)
 
 ---
 
@@ -220,23 +334,58 @@ Project is for 10Seven's internal research work. YWCA is just one white-label cl
 **Chloe on Patient Chart**:
 > "I think of it like a patient chart at a hospital. You can see all their labs, but also the doctor's notes. The person coming on shift next can see: what was that person thinking? That's what it needs to be."
 
+## Key Quotes from Monday Follow-Up Call
+
+**Chloe on Survey Builder**:
+> "I would honestly love to get away from another platform. If you feel like we can make a survey builder... it is literally a survey where people are inputting their answers. That's it."
+
+**Chloe on Integrated Platform**:
+> "If we could get something that gives me some quantitative solution, like this. Like, that's really all I need. If all of that was in one place for us, that would be a huge game changer, huge."
+
+**Chloe on Data Visualization**:
+> "Nine times out of 10 we're looking at tables... We're actually reporting the table."
+
+**Chloe on Mapbox**:
+> "I did some research like a year ago on Mapbox, and I kind of really liked it. They have heat maps and things that we can kind of make work for us."
+
+**Chloe on White Label Marketing**:
+> "Do I think we're going to get a lot of YWCA clients? No... people are going to stop at the trauma graph, like, that's really what they want."
+
+**Chris on Granularity**:
+> "The further down you can go in detail, sounds like that's of high value?"
+**Chloe**: "Big time."
+
 ---
 
-## Bottom Line (Updated)
+## Bottom Line (Updated After Monday)
 
-**What you're building**: Collaborative research platform for 10Seven's internal work. NOT a YWCA project.
+**What you're building**: Integrated research platform for 10Seven - survey builder + qual coding + quant analysis + trauma graph licensing. NOT a YWCA project.
 
 **Three products (priority order)**:
-1. Internal data warehouse ("patient chart system") - BUILD FIRST
-2. Trauma graph (interactive maps for licensing) - BUILD SECOND
-3. White label for clients (YWCA version) - BUILD THIRD
+1. **Internal data warehouse** - Survey builder + qual coding + quant analysis + maps (BUILD FIRST)
+2. **Trauma graph** - Interactive Mapbox maps with event filters + premium tiers (BUILD SECOND)
+3. **White label** - Simple storage for YWCA (BUILD THIRD, don't market publicly)
 
 **Build order**: Internal first, clients later. "Build our stuff, retrofit to clients."
 
-**Business model**: Stop consulting, license trauma graph access, Chloe pumps out research, turnkey products.
+**Business model**:
+- License trauma graph access (B2B institutional + B2C individual + parents)
+- Trial licensing at conferences (14-day access codes)
+- Usage-based pricing for premium users
+- Stop consulting, focus on scalable products
 
-**Feasibility**: Yes (7/10 complexity), solid business (8/10), low risk (4/10).
+**Target audiences**: Think tanks, government bodies, nonprofits, researchers, financial advisors, **parents (huge untapped market)**
 
-**Your role**: Build 10Seven's internal research infrastructure. YWCA is a side project to retrofit later.
+**Feasibility**: Yes (8/10 complexity due to expanded scope), solid business (8/10), medium risk (4.5/10).
 
-**The Big Reveal**: Everything I understood before Thursday was wrong. This is 10Seven's platform, not YWCA's.
+**Tech stack considerations**:
+- Mobile apps required
+- Supabase recommended for internal (geo queries, version history, quant analysis, CLI workflow)
+- Firebase strong for mobile OR hybrid approach
+- Mapbox confirmed for maps
+
+**Your role**: Build 10Seven's end-to-end research infrastructure. Replace Qualtrics, Max QDA, SPSS, and Illustrator with ONE integrated platform.
+
+**The Big Reveals**:
+1. Thursday: This is 10Seven's platform, not YWCA's
+2. Monday: Scope much larger - full survey builder + enhanced quant analysis + mobile apps required
